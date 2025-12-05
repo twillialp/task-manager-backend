@@ -6,7 +6,7 @@ const {
   loginUser,
 } = require("../controllers/userController");
 
-const { authMiddleware,  adminOnly, signToken} = require("../middlewares/auth");
+const { authMiddleware,  adminOnly, signToken} = require("../middleware/auth");
 const passport = require('passport');
 
 // Router
