@@ -21,7 +21,7 @@ const app = express();
 app.use(morgan('dev')); // logger
 app.use(express.json()); // body parser
 app.use(cors({origin: "http://localhost:5173"}));
-require('../backend/config/passport');
+require('./config/passport');
 
 // ========= Routes ======================
 app.use('/api/users', require('./routes/userRoutes'));
